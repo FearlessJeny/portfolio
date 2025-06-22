@@ -160,7 +160,9 @@ body.light-theme {
 }
 
 /* --- Reusable CSS classes --- */
-
+.home1 {
+	padding: 10px;
+}
 section {
 	padding: 85px 0px 30px;
 }
