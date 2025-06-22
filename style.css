@@ -322,7 +322,7 @@ section {
 .home-content {
 	grid-template-columns: 0.5fr 3fr;
 	align-items: center;
-	padding-top: 56px;
+/* 	padding-top: 56px; */
 }
 
 .home-social {
