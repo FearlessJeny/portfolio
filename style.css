@@ -160,9 +160,7 @@ body.light-theme {
 }
 
 /* --- Reusable CSS classes --- */
-.home1 {
-	padding: 10px;
-}
+
 section {
 	padding: 85px 0px 30px;
 }
@@ -203,7 +201,7 @@ section {
 	width: 100%;
 	position: fixed;
 	left: 0;
-	bottom: 0;
+	top: 0;
 	z-index: 100;
 	background-color: var(--body-background);
 }
@@ -322,7 +320,7 @@ section {
 .home-content {
 	grid-template-columns: 0.5fr 3fr;
 	align-items: center;
-/* 	padding-top: 56px; */
+	/* padding-top: 56px; */
 }
 
 .home-social {
@@ -739,93 +737,10 @@ section {
 	transform: rotate(-180deg);
 }
 /* --------------------------------------------------------------------------Skills section End */
-/* --------------------------------------------------------------------------Qualification section start */
-
-.qualification-tabs {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	column-gap: 40px;
-	margin: 0 auto 32px;
-}
-
-.qualification-button {
-	font-size: var(--normal-font-size);
-	font-weight: var(--font-medium);
-	cursor: pointer;
-	transition: all .3s;
-}
-
-.qualification-button:hover {
-	color: var(--hover-color);
-}
-
-.qualification-icon {
-	font-size: 22px;
-	margin-right: 8px;
-}
-
-.qualification-data {
-	display: grid;
-	grid-template-columns: 1fr max-content 1fr;
-	column-gap: 24px;
-}
-
-.qualification-title {
-	font-size: var(--normal-font-size);
-	font-weight: var(--font-semi-bold);
-	margin-bottom: 5px;
-}
-
-.qualification-subtitle {
-	display: inline-block;
-	font-size: var(--normal-font-size);
-	margin-bottom: 16px;
-}
-
-.qualification-calendar {
-	font-size: var(--normal-font-size);
-	color: var(--text-color);
-}
-
-.qualification-rounder {
-	display: inline-block;
-	width: 13px;
-	height: 13px;
-	background: var(--hover-color);
-	border-radius: 50%;
-}
-
-.qualification-line {
-	display: block;
-	width: 1px;
-	height: 100%;
-	background: var(--hover-color);
-	transform: translate(6px, -7px);
-}
-
-.qualification [data-content] {
-	display: none;
-}
-
-.qualification-active[data-content] {
-	display: block;
-	background: var(--container-color);
-	padding: 15px;
-	border-radius: 20px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-}
-
-.qualification-button .qualification-active {
-	color: var(--hover-color);
-}
-
-.fa-calendar-alt {
-	font-size: 12px;
-}
 
 
-/* --------------------------------------------------------------------------Qualification section End */
+
+
 /* --------------------------------------------------------------------------Service section start */
 
 .services-container {
@@ -961,7 +876,9 @@ section {
 	text-align: center;
 }
 
-.portfolio-img {
+
+
+.portfolio-img  {
 	width: 500px;
 	border-radius: 20px;
 	justify-self: center;
@@ -1256,6 +1173,7 @@ position: absolute
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (min-width: 568px) {
+	
 	.home-content {
 		grid-template-columns: max-content 1fr 1fr;
 	}
@@ -1274,15 +1192,6 @@ position: absolute
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	.qualification-section {
-		display: grid;
-		grid-template-columns: .7fr;
-		justify-content: center;
-	}
-
-	.qualification-active[data-content] {
-		padding: 20px;
-	}
 }
 
 /* --------------------------------------------------------------------------For small devices */
