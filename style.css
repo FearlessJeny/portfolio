@@ -4,6 +4,7 @@
 	--title-color: #f2f1f3;
 	--text-color: #ffffff;
 	--hover-color: #287fe2;
+	--info: #88ff00;
 	--scroll-bar-color: #716c89;
 	--scroll-thumb-color: #545167;
 	--section-title-line: -webkit-liner-gradient(
@@ -776,7 +777,7 @@ section {
 }
 
 .services-button {
-	color: var(--hover-color);
+	color: var(--info);
 	font-size: var(--small-font-size);
 	cursor: pointer;
 }
